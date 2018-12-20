@@ -86,7 +86,7 @@ public class BookRestController {
     @GetMapping(path = "/search")
     public @ResponseBody
     Page<Book> search(
-            @RequestParam(required = false, defaultValue = "1") Integer page, //начальная страница, по умлчанию 1
+            @RequestParam(required = false, defaultValue = "1") Integer page, //начальная страница, по умлочанию 1
             @RequestParam(required = false, defaultValue = "id") String sortBy, //поле сортировки списка, по умолчанию id
             @RequestParam(required = false, defaultValue = "ask") String order, // направление сортовки, по умолчанию - по возрастанию
             @RequestParam(required = false, defaultValue = "") String term, // запрос на поиск
